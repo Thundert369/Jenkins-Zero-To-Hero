@@ -5,8 +5,9 @@ pipeline {
       steps {
         echo 'testing'
       }
-      stage ('terraform init')
-      sh '(terraform init)'
+      stage ('terraform init') {
+        steps {
+          sh '(terraforn init)'
     }
   }
 }
