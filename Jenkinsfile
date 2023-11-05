@@ -5,6 +5,7 @@ pipeline {
       steps {
         echo 'testing'
       }
+    }
       stage('Terraform Init') {
             steps {
                 script {
@@ -14,5 +15,5 @@ pipeline {
         }
     }
   }
-}
+
   
