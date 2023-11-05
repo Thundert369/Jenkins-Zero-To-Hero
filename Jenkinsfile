@@ -5,10 +5,14 @@ pipeline {
       steps {
         echo 'testing'
       }
-      stage ('terraform init') {
-        steps {
-          sh '(terraforn init)'
+      stage('Terraform Init') {
+            steps {
+                script {
+                    sh 'terraform init'
+                }
+            }
+        }
     }
   }
 }
-  }
+  
